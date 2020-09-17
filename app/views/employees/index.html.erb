@@ -1,0 +1,6 @@
+<h1>Employees#index</h1>
+<p>Find me in app/views/employees/index.html.erb</p>
+
+<% @employees.each do |employee| %>
+    <p><%= link_to employee.first_name, employee_path(employee)%></p>
+<% end %>
